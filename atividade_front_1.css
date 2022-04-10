@@ -1,0 +1,211 @@
+body {
+	background-color: #443E3E;
+	min-height: 100vh;	
+	position: relative;
+}
+
+body::after {
+  content: "";
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: var(--background);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.nav-cor {
+	color: white;
+}
+
+.logo {
+	justify-self: center;
+}
+
+.navbar-brand {
+  float: none;
+}
+
+@media (min-width: 992px) {
+	.navbar-collapse {
+		flex: 0;
+	}
+}
+
+
+.menu-link {
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 1rem;
+	color: white;
+	border-right: 1px solid #FFFFFF;
+	padding-right: 0.5rem;
+}
+
+.menu-link:hover {	
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+.menu-link:last-child {
+	border-right: none;
+}
+
+.icon-search {
+	width: 100px;
+}
+
+/* PAGE CONTENT */
+.page-content {
+	padding: 1em;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.current-music-details {
+	margin-top: 10em;
+	margin-bottom: 2.5em;
+}
+
+.current-music-title {
+	font-weight: bold;
+	margin-top: 20px;
+	color: white;
+	font-size: 40px;
+}
+
+.current-music-info {
+	font-weight: bold;
+	color: white;
+	margin-bottom: 15px;
+	font-size: 17px;	
+}
+
+.music-buttons {
+	display: flex;
+	gap: 15px;
+	font-size: 18px;
+}
+
+.button {
+	font-family: inherit;
+	border: 0;
+	cursor: pointer;
+	display: inline-block;
+	background: #454545;
+	color: white;
+	font-weight: bold;
+	border-radius: 6px;	
+	padding: 5px 10px;
+	text-decoration: none;
+	
+}
+
+.button.active {
+	color: #FD207D;
+}
+
+.button.active:hover {
+	color: #FD207D;
+}
+
+.button:hover {
+	color: white;
+	outline: 1px solid #000;
+}
+
+.button-accent {
+	background: #FD207D;
+}
+
+.button img {
+	height: 26px;
+	width: 26px;
+}
+
+.music-item-container {
+	gap: 20px;
+	margin-top: 10px;	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.music-item {
+	min-width: 150px;
+	max-width: 136px;
+	flex: 0 1 calc(20% - 20px);
+	height: 200px;
+	position: relative;
+	box-sizing: border-box;
+
+}
+
+@media (max-width: 768px) {
+	.music-item {
+		flex-basis: calc(50% - 20px);
+		flex-grow: 0;
+	}
+}
+
+@media (max-width: 360px) {
+	.music-item {
+		flex-basis: 100%;
+		flex-grow: 1;
+		max-width: 100%;
+	}
+}
+
+.music-item:hover {
+	outline: 5px solid #FD1F7C;
+}
+
+.music1 {
+    background: #C4C4C4;
+}
+
+.music2 {
+    background: #AEA8A8;
+}
+
+.music3 {
+    background: #979696;
+
+}
+
+.music4 {
+    background: #797878;
+}
+
+.music5 {
+    background: #707070;
+}
+
+.music-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.music-details {
+	position: absolute;	
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding: 0.5em;
+	background-color: rgba(0, 0, 0, 0.4);
+}
